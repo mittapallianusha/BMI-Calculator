@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="icon" href="bmi logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="bg-container">
+        <h1>Calculate your Body Mass Index</h1>
+        <div class="media-container">
+            <div class="bg-calculate">
+                <div class="radio-buttons">
+                    <input  type="radio" name="option" value="metric" id="metric" >
+                    <label class="radios"  for="metric">Metric unit</label>
+                    <input type="radio" name="option" value="us" id="us">
+                    <label class="radios" for="us">US unit</label>
+                </div>
+                <div class="inputs">
+                    <label class="label-value weight" for="weight" id="weight">Weight</label>
+                    <input class="input-value weight"  type="text" id="weight1" placeholder="Weight">
+                    <br/>
+                    <label class="label-value height" for="height" id="height">Height</label>
+                    <input class="input-value height" type="text" id="height1" placeholder="Height">
+                    <br/>
+                    <div class="btn">
+                        <button class="button" id="btn">Calculate BMI</button>
+                    </div>
+                    
+                </div>
+                <div class="result">
+                    <input type="text" id="result">
+                </div>
+            </div>
+            <div class="bmi-table" id="bmiTable">
+                <table border="1px" >
+                    <tr>
+                        <th>BMI</th>
+                        <th>Category</th>
+                    </tr>
+                    <tr>
+                        <td>16.0 - 18.4</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 24.9</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td>25.0 - 34.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td>35+</td>
+                        <td>Obese</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="result-image image-style" id="imageDisplay">
+                <img src="" id="resultImage" alt="">
+            </div>
+        </div>
+    </div>
+        
+    
+</body>
+</html>

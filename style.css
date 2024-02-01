@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 10px;
+}
+.bg-container{
+    background-color: #ac9722;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: "Verdana";
+}
+h1{
+    -webkit-text-stroke: 2px rgb(16, 7, 7);
+    color: transparent;
+    background: linear-gradient(to right,rgb(12, 82, 23),rgb(196, 105, 60));
+    
+    background-clip: text;
+}
+.bg-calculate{
+    background-image: url('weighingScale.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(75, 79, 60);
+    padding: 20px;
+    border: 2px solid;
+    border-color: burlywood brown;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.radio-buttons{
+    font-size:25px;
+    font-family: 'roboto';
+}
+.radios:hover{
+    color:chocolate;
+}
+.inputs{
+    margin: 5px;
+    padding: 10px;
+}
+.label-value{
+    font-size:20px;
+    font-family: "roboto";
+}
+.weight{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    border:1px solid transparent;
+    background: #e0e0e0;
+    box-shadow:  inset 15px 15px 30px #5a5a5a,
+    inset  -15px -15px 30px #ffffff;
+}
+.height{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    border:1px solid transparent;
+    background: #e0e0e0;
+    box-shadow:  inset 15px 15px 30px #5a5a5a,
+    inset  -15px -15px 30px #ffffff;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    height: 40px;
+    border-radius: 27px;
+    margin: 10px;
+    border:1px solid transparent;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: inset 15px 15px 30px #5a5a5a,
+             inset  -15px -15px 30px #ffffff;
+}
+.result{
+    display: flex;
+    justify-content: center;
+}
+#result{
+    width: 150px;
+    border: 1px solid transparent;
+    padding: 20px;
+    font-size:30px;
+    border-radius: 27px;
+    background: #e0e0e0;
+    box-shadow: inset 15px 15px 30px #5a5a5a,
+            inset -15px -15px 30px #ffffff;
+}
+
+.input-value{
+    font-size:15px;
+    font-family: "roboto";
+    font-weight: 600;
+}
+.bmi-table{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border:solid rgb(81, 80, 80);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    font-family: "roboto";
+    background-color: white;
+    box-shadow: inset 15px 15px 40px #5a5a5a,
+                inset -15px -15px 40px  #ffffff;
+}
+th{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+td{
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+@media (min-width:768px) and (max-width:850px){
+    .media-container{
+        display: flex;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .weight{
+        align-self: center;
+    }
+    .height{
+        align-self: center;
+    }
+}
+@media (min-width:851px){
+    .media-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    table:hover{
+        transition: all ease-in-out 2s;
+        transform: scale(1.3);
+    }
+   
+}
+
+
+.image-style{
+    filter: drop-shadow(10px 10px 20px black);
+}
+.result-image{
+    display: none;
+}
