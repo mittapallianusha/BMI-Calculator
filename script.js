@@ -10,12 +10,22 @@ document.addEventListener('DOMContentLoaded', function () {
     let imageDisplayEl=document.getElementById("imageDisplay");
 
     metricUnit.onclick=function(){
+        unitLabelEl.value="";
+        heightLabelEl.value="";
+        resultEl.value="";
+        bmiTableEl.style.display="flex";
+        resultImageEl.style.display="none";
         unitLabelEl.placeholder="Enter weight in KG's";
         heightLabelEl.placeholder="Enter height in CM's";
         unitLabelEl.style.fontStyle="italic";
         unit="metric";
     }
-    usUnit.onclick=function(){        
+    usUnit.onclick=function(){     
+        unitLabelEl.value="";  
+        heightLabelEl.value=""; 
+        resultEl.value="";
+        bmiTableEl.style.display="flex";
+        resultImageEl.style.display="none";
         unitLabelEl.placeholder="Enter weight in LB's";
         heightLabelEl.placeholder="Enter height in IN's";
         unitLabelEl.style.fontStyle="italic";
@@ -39,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         resultEl.value=bmi;
         bmiTableEl.style.display="none";
-
+        resultImageEl.style.display="flex";
         if(bmi <= 19){
             resultImageEl.src = "thin.png";
         }
